@@ -30,7 +30,8 @@ The following steps were undertaken in cleaning the data
 
 1. Remove unnecessary columns EIN and NAME
 2. Review the number of unique entries in all columns to identify which ones could be reduced in number
-   - Columns with large numbers of unique entries were `APPLICATION_TYPE`, `CLASSIFICATION` and `ASK_AMT`. `ASK_AMT` is the asked amount and so not suitable for reducing the number of categories  ![Columns and categories](img/columns.png)
+   - Columns with large numbers of unique entries were `APPLICATION_TYPE`, `CLASSIFICATION` and `ASK_AMT`. `ASK_AMT` is the asked amount and so not suitable for reducing the number of categories  
+   - ![Columns and categories](img/columns.png)
 3. Bin all categories in `APPLICATION_TYPE` with fewer than 500 applications into an `Other` category  ![Application_type binning](img/application_type.png)
 4. Bin all categories in `CLASSIFICATION` with fewer than 100 applications into and `Other` category  ![Classification binning](img/classification.png)
 5. Convert categorical data to numeric with `pd.get_dummies`
