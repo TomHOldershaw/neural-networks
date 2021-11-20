@@ -47,6 +47,8 @@ The following steps were undertaken in cleaning the data
 
 An initial model was set up consisting of two hidden layers with the `relu` activation, and an output layer with a `sigmoid` activation. The two hidden layers had 10 and 5 neurons respectively. This model was compiled with `binary_crossentropy` loss and the `adam` optimiser, and recording the `accuracy` and `AUC` metrics. The model was trained on the training dataset and evaluated on the test dataset.
 
+These model parameters were chosen as they had been most commonly used in previous models. The number of neurons sought to provide sufficient chance for the model to perform without excessive computational requirements.
+
 ![Initial model structure](img/initial_structure.png)
 
 Evaluating the model showed it had an accuracy of 0.728 and an AUC of 0.781. This is a reasonable score, but below our target accuracy of 0.75. Therefore, steps were taken to try to improve the model performance.
